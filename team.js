@@ -22,7 +22,7 @@ const player = [
         jerseyNumber: "24",
         location: "Philadelphia, PA",
         birthDate: "August 23, 1978",
-        photo: "assets/KB24.png"
+        photo: "assets/kb24.png"
     },
     {
         firstName: "Lebron",
