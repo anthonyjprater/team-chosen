@@ -1,0 +1,185 @@
+
+
+const roster = document.getElementById('teamRoster')
+
+
+/*Fetch function for JSON data*/
+// async function fetchDataJSON() {
+//     const response = await fetch('/data/data.json');
+//     const player = await response.json();  return player;
+//   };
+
+ // fetched data
+// fetchDataJSON().then(player => {
+//     player;
+
+const player = [
+    {
+        firstName: "Kobe",
+        lastName: "Bryant",
+        position: "Guard",
+        height: "6-6",
+        jerseyNumber: "24",
+        location: "Philadelphia, PA",
+        birthDate: "August 23, 1978",
+        photo: "assets/KB24.png"
+    },
+    {
+        firstName: "Lebron",
+        lastName: "James",
+        position: "Guard/Forward",
+        height: "6-8",
+        jerseyNumber: "23",
+        location: "Akron, OH",
+        birthDate: "December 30, 1984",
+        photo: "assets/LBJ1.png"
+    },
+    {
+        firstName: "Kevin",
+        lastName: "Durant",
+        position: "Forward",
+        height: "6-10",
+        jerseyNumber: "7",
+        location: "Washington, D.C.",
+        birthDate: "September 29, 1988",
+        photo: "assets/KD2.png"
+    },
+    {
+        firstName: "Dwayne",
+        lastName: "Wade",
+        position: "Guard",
+        height: "6-4",
+        jerseyNumber: "24",
+        location: "Chicago, IL",
+        birthDate: "January 17, 1982",
+        photo: "assets/DW2.png"
+    },
+    {
+        firstName: "Stephen",
+        lastName: "Curry",
+        position: "Guard",
+        height: "6-3",
+        jerseyNumber: "30",
+        location: "Akron, OH",
+        birthDate: "March 14, 1988",
+        photo: "assets/SC.png"
+    },
+    {
+        firstName: "Lebron",
+        lastName: "James",
+        position: "Guard/Forward",
+        height: "6-8",
+        jerseyNumber: "6",
+        location: "Akron, OH",
+        birthDate: "Decembeer 30, 1984",
+        photo: "assets/LBJ4.png"
+    },
+    {
+        firstName: "Kobe",
+        lastName: "Bryant",
+        position: "Guard",
+        height: "6-6",
+        jerseyNumber: "24",
+        location: "Philadelphia, PA",
+        birthDate: "August 23, 1978",
+        photo: "assets/KB24.png"
+    },
+    {
+        firstName: "Lebron",
+        lastName: "James",
+        position: "Guard/Forward",
+        height: "6-8",
+        jerseyNumber: "23",
+        location: "Akron, OH",
+        birthDate: "December 30, 1984",
+        photo: "assets/LBJ1.png"
+    },
+    {
+        firstName: "Kevin",
+        lastName: "Durant",
+        position: "Forward",
+        height: "6-10",
+        jerseyNumber: "7",
+        location: "Washington, D.C.",
+        birthDate: "September 29, 1988",
+        photo: "assets/KD2.png"
+    },
+    {
+        firstName: "Dwayne",
+        lastName: "Wade",
+        position: "Guard",
+        height: "6-4",
+        jerseyNumber: "24",
+        location: "Chicago, IL",
+        birthDate: "January 17, 1982",
+        photo: "assets/DW2.png"
+    },
+    {
+        firstName: "Stephen",
+        lastName: "Curry",
+        position: "Guard",
+        height: "6-3",
+        jerseyNumber: "30",
+        location: "Akron, OH",
+        birthDate: "March 14, 1988",
+        photo: "assets/SC.png"
+    },
+    {
+        firstName: "Lebron",
+        lastName: "James",
+        position: "Guard/Forward",
+        height: "6-8",
+        jerseyNumber: "6",
+        location: "Akron, OH",
+        birthDate: "Decembeer 30, 1984",
+        photo: "assets/LBJ4.png"
+    }
+]
+
+player.forEach((player) => {
+
+    let playerSlot = document.createElement('div');
+    playerSlot.className = 'roster-item-wrapper';
+
+    playerSlot.innerHTML = `
+    <div class="player-card-wrapper">
+    <div class="player-card">
+        <figure class="player-image" style="background-image: url('${player.photo}')">
+            <div class="player-card-header">
+                <p class="PlayerCard-headerJerseyNumber">${player.jerseyNumber}</p>
+                <div class="PlayerCard--headerName">
+                    <span class="PlayerCard--headerFirstName">${player.firstName}</span>
+                    <span class="PlayerCard--headerLastName">${player.lastName}</span>
+                </div>
+                <p class="PlayerCard--headerPosition">${player.position}</p>
+            </div>
+            <div class="PlayerCard--stats">
+                <ul class="PlayerCard--statList">
+                    <li><span>HEIGHT</span><span>${player.height}</span></li>
+                    <li><span>POSITION</span><span>${player.position}</span></li>
+                    <li><span>DATE OF BIRTH</span><span>${player.birthDate}</span></li>
+                    <li><span>FROM</span><span>${player.location}</span></li>
+                </ul>
+                <div class="PlayerCard--statBtnHolder">
+                <a href="" class="PlayerCard--statBtn"><span role="button">Full Bio</span></a>
+                <a href="" class="PlayerCard--statBtn"><span role="button">Player Stats</span></a>
+                </div>
+            </div>
+        </figure>
+    </div>
+</div>
+`
+roster.appendChild(playerSlot)
+
+})
+
+document.getElementById('main-content-wrapper').appendChild(roster)
+
+function hamburger() {
+    let x = document.getElementById("hamburger-menu-nav");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }

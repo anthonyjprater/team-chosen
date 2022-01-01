@@ -1,0 +1,569 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+  }
+  
+  /* Preferred box-sizing value */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    Remove list styles (bullets/numbers)
+    in case you use it with normalize.css
+  */
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* For images to not be able to exceed their container */
+  img {
+    max-width: 100%;
+  }
+  
+  /* Removes spacing between cells in tables */
+  table {
+    border-collapse: collapse;
+  }
+  
+  /* Revert the 'white-space' property for textarea elements on Safari */
+  textarea {
+    white-space: revert;
+  }
+
+/* A11y */
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;            /* 3 */
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+	clip: auto !important;
+	-webkit-clip-path: none !important;
+		clip-path: none !important;
+	height: auto !important;
+	margin: auto !important;
+	overflow: visible !important;
+	width: auto !important;
+	white-space: normal !important;
+}
+
+/* Typography */
+
+html {
+  font: 1rem/1.5 'Oswald', san-serif;
+  color: #FFCB05;
+}
+
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr{
+    margin-bottom:1.5rem;
+}
+
+/* Utility Style */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.menu-nav a:hover,
+.main-content a span:hover {
+  border-bottom: 2px solid #FFCB05;
+}
+
+/* Layout */
+
+body {
+  background-color: #000;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-gap: 0.5rem;
+}
+
+/* Header Style */
+  
+header {
+  background-color: #000  ;
+  padding: 1rem 1rem 0.25rem;
+  grid-row: 1 / 2;
+  grid-column: 1 / 1;
+}
+
+.main-nav-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0.5rem 0.5rem 0.25rem;
+}
+
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem;
+}
+
+.header-item {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.logo .logo-image {
+  width: 100%;
+  min-width: 75px;
+  height: auto;
+}
+/* Page Navigation */
+
+.mobile-menu-hamburger {
+  display: none;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+
+.menu-nav {
+  font-size: 1.3rem;
+}
+
+.menu-nav .main-nav__menu-item {
+  padding: 0.5rem 1.25rem;
+}
+
+.social-bar {
+  display: flex;
+  gap: 0.25rem;
+  border: 1px solid black;
+}
+
+.social-bar__item {
+  width: 2.5rem;
+  display: grid;
+  place-content: center;
+}
+
+.social-bar__item:hover {
+  font-size: 1.5rem;
+}
+
+.gold {
+  color: #FFCB05;
+}
+
+
+/* Main Content Style */
+
+
+.main-content {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #000;
+  grid-row: 2 / 3;
+  grid-column: 1 / 1;
+  padding: 1rem;
+}
+
+.main-content .container{
+  width: 100%;
+  max-width: 1400px;
+}
+
+.main-content-wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-top: 1px solid #FFCB05;
+}
+
+.home-title {
+  font-size: 1.5rem;
+  padding: 1rem .25rem .25rem;
+}
+
+/* About Page */
+
+.about-us {
+  padding: 0.25rem;
+  width: 50%;
+}
+
+/* Carousel style */
+
+.carousel-wrapper {
+  display: grid;
+  place-content: center;
+  max-width: 800px;
+  padding: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel {
+  max-width: 600px;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+  display: none;
+}
+
+.carousel .carousel-item-visible {
+  display: block;
+  animation: fadeVisibility 1.5s;
+}
+
+.carousel .carousel-item {
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.carousel .carousel-item img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.carousel .carousel-item .blurred-image {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  box-shadow: inset 0px 0px 10px 20px #000;
+}
+
+.carousel .carousel-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel-actions button {
+  border-radius: 50px;
+  background-color: #000;
+  border: 1px solid #FFCB05;
+  color: #FFCB05;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding: 0rem 0.7rem 0rem;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+  margin-left: 20px;
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+  margin-right: 20px;   
+}
+
+@keyframes fadeVisibility {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Team Roster Page */
+
+.team-header-wrapper {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  background-image: url('../assets/huddle-color.jpg');
+  background-size: 100% 20rem;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.team-header {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  padding: 1rem 1.5rem 0;
+  letter-spacing: -0.1rem;
+  line-height: 5rem;
+}
+
+.team-roster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-block-start: 1rem;
+  padding: 0 1rem;
+}
+
+.roster-item-wrapper {
+  border: 1px solid black;
+  width: 30%;
+}
+
+.middle-roster {
+  border-left: 1px solid #FFCB05;
+  border-right: 1px solid #FFCB05;
+}
+
+.player-card-wrapper {
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.player-card-wrapper::before {
+  background: #303030;
+  content: '';
+  position: absolute;
+  left: calc(32px / -2);
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #dfdfdf;
+}
+
+.player-image {
+  top: 1.5rem;
+  background-clip: padding-box;
+  background-size: 200px 400px;
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  background-attachment: relative;
+  background-position: top;
+}
+
+.player-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.PlayerCard--headerJerseyNumber {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.PlayerCard--headerName {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid #303030;
+}
+
+.PlayerCard--headerFirstName {
+  color: #FFCB05;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.PlayerCard--headerLastName {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  overflow-wrap: break-word;
+}
+
+.PlayerCard--headerPosition {
+  flex: 0 0 100%;
+  margin-top: 8px;
+  color: #c0c0c0;
+  text-align: left;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.PlayerCard--stats {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 40px;
+  opacity: 0;
+  transition: opacity 250ms ease-out;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+}
+
+.PlayerCard--stats:hover {
+  opacity: 1;
+}
+
+.PlayerCard--stats .PlayerCard--statList {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.1;
+}
+
+.PlayerCard--stats .PlayerCard--statList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #404040;
+}
+
+.PlayerCard--stats .PlayerCard--statBtnHolder {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 64px;
+  margin-top: 16px;
+}
+
+.PlayerCard--stats .PlayerCard--statBtn {
+  flex: 0 0 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PlayerCard--stats .PlayerCard--statBtn:nth-child(2) {
+  border-left: 1px solid #404040;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+  .header-items {
+    justify-content: space-between;
+  }
+  .mobile-menu-hamburger {
+    display: flex;
+    flex-flow: column nowrap;
+    visibility: visible;
+    position: relative;
+    font-size: 3rem;
+  }
+  .hamburger-menu-nav {
+    position: absolute;
+    top: 100px;
+    left: -50px;
+    display: none;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid #FFCB05;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: #000;
+  }
+
+  .hamburger-menu-nav a:active {
+    border-bottom: 2px solid #FFCB05;
+  }
+
+  .menu-nav {
+    display: none;
+  }
+  .social-bar-wrapper {
+    display: none;
+  }
+  .roster-item-wrapper {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .roster-item-wrapper {
+    width: 100%;
+  }
+  .PlayerCard--stats {
+    padding: 1rem;
+  }
+  .team-header-wrapper {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* Footer style */
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  grid-row: 3 / 4;
+  grid-column: 1 / 1;
+  background-color: #000;
+  padding: 1rem;
+  color: #FFCB05;
+}
+
+footer .container {
+  width: 100%;
+  max-width: 1400px;
+}
+
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-top: 1px solid #FFCB05;
+}
+
+.contact {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+}
+
+.contact address a {
+  cursor: pointer;
+}
+
+.social-media {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}

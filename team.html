@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;900&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5398a5e1fc.js" crossorigin="anonymous"></script>
+    <title>Team Chosen Home Page</title>
+</head>
+<body>
+    <div id="skip-link">
+        <a href="" class="sr-only sr-only-focusable">Skip To Main Content</a>
+    </div>
+    <div class="wrapper">
+        <header class="header" id="header">
+            <nav class="main-nav-wrapper">
+                <div class="container">
+                    <div class="header-items">
+                        <div class="logo header-item">
+                            <a href="">
+                                <img class="logo-image" src="assets\WSU_transparent.png " alt="">
+                            </a>
+                        </div>
+                        <div class="mobile-menu-hamburger" id="mobile-menu-hamburger">
+                            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                            <ul class="hamburger-menu-nav" id="hamburger-menu-nav">
+                                <li class="mobile-menu-top"></li>
+                                <li class="main-nav__menu-item"><a href="index.html">Home</a></li>
+                                <li class="main-nav__menu-item"><a href="team.html">Team</a></li>
+                                <li class="main-nav__menu-item"><a href="">Schedule</a></li>
+                                <li class="main-nav__menu-item"><a href="about.html">About</a></li>
+                            </ul>
+                        </div>
+                        <ul id="main-menu" class="menu-nav header-item">
+                            <li class="mobile-menu-top"></li>
+                            <li class="main-nav__menu-item"><a href="index.html">Home</a></li>
+                            <li class="main-nav__menu-item"><a href="team.html">Team</a></li>
+                            <li class="main-nav__menu-item"><a href="">Schedule</a></li>
+                            <li class="main-nav__menu-item"><a href="about.html">About</a></li>
+                        </ul>
+                        <div class="social-bar-wrapper header-item">
+                            <ul id="socialBar" class="social-bar">
+                                <li class="social-bar__item"><a href="https://www.facebook.com"><i class="fab fa-facebook fa-lg gold"></i></a></li>
+                                <li class="social-bar__item"><a href="https://www.twitter.com"><i class="fab fa-twitter fa-lg gold"></i></a></li>
+                                <li class="social-bar__item"><a href="https://www.instagram.com"><i class="fab fa-instagram fa-lg gold"></i></a></li>
+                                <li class="social-bar__item"><a href="https://www.youtube.com"><i class="fab fa-youtube fa-lg gold"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main-content" id="main-content">
+            <div class="container">
+                <div class="main-content-wrapper" id="main-content-wrapper">
+                    <div class="team-header-wrapper">
+                        <h2 class="team-header">REGULATORS...<br>MOUNT UP!</h2>
+                    </div>
+                    <section class="team-roster" id="teamRoster">
+                        <!-- <div class="roster-item-wrapper">
+                            <div class="player-card-wrapper">
+                                <div class="player-card">
+                                    <figure class="player-image">
+                                        <div class="player-card-header">
+                                            <p class="PlayerCard-headerJerseyNumber"></p>
+                                            <div class="PlayerCard--headerName">
+                                                <span class="PlayerCard--headerFirstName"></span>
+                                                <span class="PlayerCard--headerLastName"></span>
+                                            </div>
+                                            <p class="PlayerCard--headerPosition"></p>
+                                        </div>
+                                        <div class="PlayerCard--stats">
+                                            <ul class="PlayerCard--statList">
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                            </ul>
+                                            <div class="PlayerCard--statBtnHolder"><a href=""></a><a href=""></a></div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roster-item-wrapper middle-roster">
+                            <div class="player-card-wrapper">
+                                <div class="player-card">
+                                    <figure class="player-image">
+                                        <div class="player-card-header">
+                                            <p class="PlayerCard-headerJerseyNumber">24</p>
+                                            <div class="PlayerCard--headerName">
+                                                <span class="PlayerCard--headerFirstName">Kobe</span>
+                                                <span class="PlayerCard--headerLastName">Bryant</span>
+                                            </div>
+                                            <p class="PlayerCard--headerPosition">Guard</p>
+                                        </div>
+                                        <div class="PlayerCard--stats">
+                                            <ul class="PlayerCard--statList">
+                                                <li><span>Height</span><span>6'6"</span></li>
+                                                <li><span>Position</span><span>Guard</span></li>
+                                                <li><span>Date of Birth</span><span>August 23, 1978</span></li>
+                                                <li><span>From</span><span>Philadelphia, PA</span></li>
+                                            </ul>
+                                            <div class="PlayerCard--statBtnHolder">
+                                                <a href="" class="PlayerCard--statBtn"><span role="button">Full Bio</span></a><a href="" class="PlayerCard--statBtn"><span role="button">Player Stats</span></a>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roster-item-wrapper">
+                            <div class="player-card-wrapper">
+                                <div class="player-card">
+                                    <figure class="player-image">
+                                        <div class="player-card-header">
+                                            <p class="PlayerCard-headerJerseyNumber"></p>
+                                            <div class="PlayerCard--headerName">
+                                                <span class="PlayerCard--headerFirstName"></span>
+                                                <span class="PlayerCard--headerLastName"></span>
+                                            </div>
+                                            <p class="PlayerCard--headerPosition"></p>
+                                        </div>
+                                        <div class="PlayerCard--stats">
+                                            <ul class="PlayerCard--statList">
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                            </ul>
+                                            <div class="PlayerCard--statBtnHolder"><a href=""></a><a href=""></a></div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roster-item-wrapper">
+                            <div class="player-card-wrapper">
+                                <div class="player-card">
+                                    <figure class="player-image">
+                                        <div class="player-card-header">
+                                            <p class="PlayerCard-headerJerseyNumber"></p>
+                                            <div class="PlayerCard--headerName">
+                                                <span class="PlayerCard--headerFirstName"></span>
+                                                <span class="PlayerCard--headerLastName"></span>
+                                            </div>
+                                            <p class="PlayerCard--headerPosition"></p>
+                                        </div>
+                                        <div class="PlayerCard--stats">
+                                            <ul class="PlayerCard--statList">
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                            </ul>
+                                            <div class="PlayerCard--statBtnHolder"><a href=""></a><a href=""></a></div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roster-item-wrapper middle-roster">
+                            <div class="player-card-wrapper">
+                                <div class="player-card">
+                                    <figure class="player-image">
+                                        <div class="player-card-header">
+                                            <p class="PlayerCard-headerJerseyNumber"></p>
+                                            <div class="PlayerCard--headerName">
+                                                <span class="PlayerCard--headerFirstName"></span>
+                                                <span class="PlayerCard--headerLastName"></span>
+                                            </div>
+                                            <p class="PlayerCard--headerPosition"></p>
+                                        </div>
+                                        <div class="PlayerCard--stats">
+                                            <ul class="PlayerCard--statList">
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                            </ul>
+                                            <div class="PlayerCard--statBtnHolder"><a href=""></a><a href=""></a></div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roster-item-wrapper">
+                            <div class="player-card-wrapper">
+                                <div class="player-card">
+                                    <figure class="player-image">
+                                        <div class="player-card-header">
+                                            <p class="PlayerCard-headerJerseyNumber"></p>
+                                            <div class="PlayerCard--headerName">
+                                                <span class="PlayerCard--headerFirstName"></span>
+                                                <span class="PlayerCard--headerLastName"></span>
+                                            </div>
+                                            <p class="PlayerCard--headerPosition"></p>
+                                        </div>
+                                        <div class="PlayerCard--stats">
+                                            <ul class="PlayerCard--statList">
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                            </ul>
+                                            <div class="PlayerCard--statBtnHolder"><a href=""></a><a href=""></a></div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roster-item-wrapper">
+                            <div class="player-card-wrapper">
+                                <div class="player-card">
+                                    <figure class="player-image">
+                                        <div class="player-card-header">
+                                            <p class="PlayerCard-headerJerseyNumber"></p>
+                                            <div class="PlayerCard--headerName">
+                                                <span class="PlayerCard--headerFirstName"></span>
+                                                <span class="PlayerCard--headerLastName"></span>
+                                            </div>
+                                            <p class="PlayerCard--headerPosition"></p>
+                                        </div>
+                                        <div class="PlayerCard--stats">
+                                            <ul class="PlayerCard--statList">
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                            </ul>
+                                            <div class="PlayerCard--statBtnHolder"><a href=""></a><a href=""></a></div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roster-item-wrapper middle-roster">
+                            <div class="player-card-wrapper">
+                                <div class="player-card">
+                                    <figure class="player-image">
+                                        <div class="player-card-header">
+                                            <p class="PlayerCard-headerJerseyNumber"></p>
+                                            <div class="PlayerCard--headerName">
+                                                <span class="PlayerCard--headerFirstName"></span>
+                                                <span class="PlayerCard--headerLastName"></span>
+                                            </div>
+                                            <p class="PlayerCard--headerPosition"></p>
+                                        </div>
+                                        <div class="PlayerCard--stats">
+                                            <ul class="PlayerCard--statList">
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                            </ul>
+                                            <div class="PlayerCard--statBtnHolder"><a href=""></a><a href=""></a></div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roster-item-wrapper">
+                            <div class="player-card-wrapper">
+                                <div class="player-card">
+                                    <figure class="player-image">
+                                        <div class="player-card-header">
+                                            <p class="PlayerCard-headerJerseyNumber"></p>
+                                            <div class="PlayerCard--headerName">
+                                                <span class="PlayerCard--headerFirstName"></span>
+                                                <span class="PlayerCard--headerLastName"></span>
+                                            </div>
+                                            <p class="PlayerCard--headerPosition"></p>
+                                        </div>
+                                        <div class="PlayerCard--stats">
+                                            <ul class="PlayerCard--statList">
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                            </ul>
+                                            <div class="PlayerCard--statBtnHolder"><a href=""></a><a href=""></a></div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roster-item-wrapper">
+                            <div class="player-card-wrapper">
+                                <div class="player-card">
+                                    <figure class="player-image">
+                                        <div class="player-card-header">
+                                            <p class="PlayerCard-headerJerseyNumber"></p>
+                                            <div class="PlayerCard--headerName">
+                                                <span class="PlayerCard--headerFirstName"></span>
+                                                <span class="PlayerCard--headerLastName"></span>
+                                            </div>
+                                            <p class="PlayerCard--headerPosition"></p>
+                                        </div>
+                                        <div class="PlayerCard--stats">
+                                            <ul class="PlayerCard--statList">
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                            </ul>
+                                            <div class="PlayerCard--statBtnHolder"><a href=""></a><a href=""></a></div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roster-item-wrapper middle-roster">
+                            <div class="player-card-wrapper">
+                                <div class="player-card">
+                                    <figure class="player-image">
+                                        <div class="player-card-header">
+                                            <p class="PlayerCard-headerJerseyNumber"></p>
+                                            <div class="PlayerCard--headerName">
+                                                <span class="PlayerCard--headerFirstName"></span>
+                                                <span class="PlayerCard--headerLastName"></span>
+                                            </div>
+                                            <p class="PlayerCard--headerPosition"></p>
+                                        </div>
+                                        <div class="PlayerCard--stats">
+                                            <ul class="PlayerCard--statList">
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                            </ul>
+                                            <div class="PlayerCard--statBtnHolder"><a href=""></a><a href=""></a></div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roster-item-wrapper">
+                            <div class="player-card-wrapper">
+                                <div class="player-card">
+                                    <figure class="player-image">
+                                        <div class="player-card-header">
+                                            <p class="PlayerCard-headerJerseyNumber"></p>
+                                            <div class="PlayerCard--headerName">
+                                                <span class="PlayerCard--headerFirstName"></span>
+                                                <span class="PlayerCard--headerLastName"></span>
+                                            </div>
+                                            <p class="PlayerCard--headerPosition"></p>
+                                        </div>
+                                        <div class="PlayerCard--stats">
+                                            <ul class="PlayerCard--statList">
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                                <li><span></span><span></span></li>
+                                            </ul>
+                                            <div class="PlayerCard--statBtnHolder"><a href=""></a><a href=""></a></div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div> -->
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="contact">
+                        <address>
+                            <a href="mailto:webmaster@example.com">Contact Us</a><br>
+                            theteamchosen.org<br>
+                            Box 564, Disneyland<br>
+                            USA
+                            </address>
+                    </div>
+                    <ul id="social-media" class="social-media">
+                        <li class="social-media__item"><a href="https://www.facebook.com">facebook</a></li>
+                        <li class="social-media__item"><a href="https://www.twitter.com">twitter</a></li>
+                        <li class="social-media__item"><a href="https://www.instagram.com">instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="team.js"></script>
+</body>
+</html>
