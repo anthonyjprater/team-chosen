@@ -380,12 +380,12 @@ header {
 
 .player-image {
   top: 1.5rem;
-  background-clip: padding-box;
-  background-size: 200px 400px;
+  background-size: 500px 400px;
   background-clip: padding-box;
   background-repeat: no-repeat;
   background-attachment: relative;
   background-position: top;
+  /* background-color: #FFCB05; */
 }
 
 .player-card-header {

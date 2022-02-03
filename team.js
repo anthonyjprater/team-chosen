@@ -22,7 +22,7 @@ const player = [
         jerseyNumber: "24",
         location: "Philadelphia, PA",
         birthDate: "August 23, 1978",
-        photo: "assets/kb24.png"
+        photo: "assets/jo.png"
     },
     {
         firstName: "Lebron",
@@ -32,7 +32,7 @@ const player = [
         jerseyNumber: "23",
         location: "Akron, OH",
         birthDate: "December 30, 1984",
-        photo: "assets/LBJ1.png"
+        photo: "assets/player3.png"
     },
     {
         firstName: "Kevin",
@@ -42,7 +42,7 @@ const player = [
         jerseyNumber: "7",
         location: "Washington, D.C.",
         birthDate: "September 29, 1988",
-        photo: "assets/KD2.png"
+        photo: "assets/kaden.png"
     },
     {
         firstName: "Dwayne",
