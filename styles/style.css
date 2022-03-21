@@ -68,7 +68,7 @@
 
 html {
   font: 1rem/1.5 'Oswald', san-serif;
-  color: #39ff14;
+  color: #37ff14;
   line-height: 1.6;
 }
 
@@ -96,7 +96,7 @@ a {
 .main-content a span:hover,
 .menu-nav a:focus,
 .main-content a span:focus {
-  border-bottom: 2px solid #39ff14;
+  border-bottom: 2px solid #37ff14;
 }
 
 /* Layout */
@@ -183,7 +183,7 @@ header {
 }
 
 .gold {
-  color: #39ff14;
+  color: #37ff14;
 }
 
 
@@ -210,7 +210,7 @@ header {
   flex-flow: column nowrap;
   align-items: center;
   margin-bottom: 1.5rem;
-  border-top: 1px solid #39ff14;
+  border-top: 1px solid #37ff14;
 }
 
 .home-title {
@@ -296,8 +296,8 @@ header {
 .carousel .carousel-actions button {
   border-radius: 50px;
   background-color: #000;
-  border: 1px solid #39ff14;
-  color: #39ff14;
+  border: 1px solid #37ff14;
+  color: #37ff14;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -362,8 +362,8 @@ header {
 }
 
 .middle-roster {
-  border-left: 1px solid #39ff14;
-  border-right: 1px solid #39ff14;
+  border-left: 1px solid #37ff14;
+  border-right: 1px solid #37ff14;
 }
 
 .player-card {
@@ -422,7 +422,7 @@ header {
 }
 
 .PlayerCard--headerFirstName {
-  color: #39ff14;
+  color: #37ff14;
   font-size: 2rem;
   line-height: 2.5rem;
 }
@@ -526,14 +526,14 @@ header {
     gap: 2rem;
     align-items: center;
     padding: 0.5rem;
-    border: 1px solid #39ff14;
+    border: 1px solid #37ff14;
     border-radius: 10px;
     font-size: 1.5rem;
     background-color: #000;
   }
 
   .hamburger-menu-nav a:active {
-    border-bottom: 2px solid #39ff14;
+    border-bottom: 2px solid #37ff14;
   }
 
   .menu-nav {
@@ -569,7 +569,7 @@ footer {
   grid-column: 1 / 1;
   background-color: #000;
   padding: 1rem;
-  color: #39ff14;
+  color: #37ff14;
 }
 
 footer .container {
@@ -583,7 +583,7 @@ footer .container {
   justify-content: space-between;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  border-top: 1px solid #39ff14;
+  border-top: 1px solid #37ff14;
 }
 
 .contact {
