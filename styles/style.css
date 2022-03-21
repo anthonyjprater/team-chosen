@@ -68,7 +68,7 @@
 
 html {
   font: 1rem/1.5 'Oswald', san-serif;
-  color: #FFCB05;
+  color: #39ff14;
   line-height: 1.6;
 }
 
@@ -93,15 +93,18 @@ a {
 }
 
 .menu-nav a:hover,
-.main-content a span:hover {
-  border-bottom: 2px solid #FFCB05;
+.main-content a span:hover,
+.menu-nav a:focus,
+.main-content a span:focus {
+  border-bottom: 2px solid #39ff14;
 }
 
 /* Layout */
 
 body {
   background-color: #000;
-  padding: 1em;
+  padding: 0;
+  margin: 0;;
 }
 
 
@@ -138,13 +141,9 @@ header {
   margin-bottom: .5rem;
 }
 
-.logo {
-  max-width: 100px;
-}
-
 .logo .logo-image {
   width: 100%;
-  min-width: 75px;
+  max-width: 150px;
   height: auto;
 }
 /* Page Navigation */
@@ -163,6 +162,7 @@ header {
 
 .menu-nav .main-nav__menu-item {
   padding: 0.5rem 1.25rem;
+  align-self: center;
 }
 
 .social-bar {
@@ -177,12 +177,13 @@ header {
   place-content: center;
 }
 
-.social-bar__item:hover {
+.social-bar__item:hover,
+.social-bar__item:focus {
   font-size: 1.5rem;
 }
 
 .gold {
-  color: #FFCB05;
+  color: #39ff14;
 }
 
 
@@ -209,7 +210,7 @@ header {
   flex-flow: column nowrap;
   align-items: center;
   margin-bottom: 1.5rem;
-  border-top: 1px solid #FFCB05;
+  border-top: 1px solid #39ff14;
 }
 
 .home-title {
@@ -295,8 +296,8 @@ header {
 .carousel .carousel-actions button {
   border-radius: 50px;
   background-color: #000;
-  border: 1px solid #FFCB05;
-  color: #FFCB05;
+  border: 1px solid #39ff14;
+  color: #39ff14;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -331,7 +332,10 @@ header {
   background-image: url('../assets/huddle-color.jpg');
   background-size: 100% 20rem;
   color: #fff;
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  filter: hue-rotate(90deg);
+  box-shadow: inset 5px 5px 15px 13px black;
+  border-radius: 15px;
 }
 
 .team-header {
@@ -358,8 +362,13 @@ header {
 }
 
 .middle-roster {
-  border-left: 1px solid #FFCB05;
-  border-right: 1px solid #FFCB05;
+  border-left: 1px solid #39ff14;
+  border-right: 1px solid #39ff14;
+}
+
+.player-card {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .player-card-wrapper {
@@ -380,13 +389,18 @@ header {
 
 .player-image {
   top: 1.5rem;
+  min-height: 400px;
   background-size: 500px 400px;
   background-clip: padding-box;
   background-repeat: no-repeat;
   background-attachment: relative;
   background-position: top;
+  transition: all 250ms ease-out;
+  display: flex;
+  align-items: flex-end
   /* background-color: #FFCB05; */
 }
+
 
 .player-card-header {
   display: flex;
@@ -408,7 +422,7 @@ header {
 }
 
 .PlayerCard--headerFirstName {
-  color: #FFCB05;
+  color: #39ff14;
   font-size: 2rem;
   line-height: 2.5rem;
 }
@@ -441,14 +455,15 @@ header {
   justify-content: flex-end;
   padding: 0 40px;
   opacity: 0;
-  transition: opacity 250ms ease-out;
+  transition: opacity 500ms ease-out;
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
 }
 
-.PlayerCard--stats:hover {
+.PlayerCard--stats:hover,
+.PlayerCard--stats:focus {
   opacity: 1;
 }
 
@@ -511,14 +526,14 @@ header {
     gap: 2rem;
     align-items: center;
     padding: 0.5rem;
-    border: 1px solid #FFCB05;
+    border: 1px solid #39ff14;
     border-radius: 10px;
     font-size: 1.5rem;
     background-color: #000;
   }
 
   .hamburger-menu-nav a:active {
-    border-bottom: 2px solid #FFCB05;
+    border-bottom: 2px solid #39ff14;
   }
 
   .menu-nav {
@@ -554,7 +569,7 @@ footer {
   grid-column: 1 / 1;
   background-color: #000;
   padding: 1rem;
-  color: #FFCB05;
+  color: #39ff14;
 }
 
 footer .container {
@@ -568,7 +583,7 @@ footer .container {
   justify-content: space-between;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  border-top: 1px solid #FFCB05;
+  border-top: 1px solid #39ff14;
 }
 
 .contact {

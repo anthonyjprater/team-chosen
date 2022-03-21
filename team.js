@@ -22,7 +22,7 @@ const player = [
         jerseyNumber: "24",
         location: "Philadelphia, PA",
         birthDate: "August 23, 1978",
-        photo: "assets/jo.png"
+        photo: "assets/jojogreen.png"
     },
     {
         firstName: "Lebron",
@@ -32,7 +32,7 @@ const player = [
         jerseyNumber: "23",
         location: "Akron, OH",
         birthDate: "December 30, 1984",
-        photo: "assets/player3.png"
+        photo: "assets/player3greensamp.png"
     },
     {
         firstName: "Kevin",
@@ -42,7 +42,7 @@ const player = [
         jerseyNumber: "7",
         location: "Washington, D.C.",
         birthDate: "September 29, 1988",
-        photo: "assets/kaden.png"
+        photo: "assets/kadengreen.png"
     },
     {
         firstName: "Dwayne",
@@ -144,8 +144,7 @@ player.forEach((player) => {
     playerSlot.innerHTML = `
     <div class="player-card-wrapper">
     <div class="player-card">
-        <figure class="player-image" style="background-image: url('${player.photo}')">
-            <div class="player-card-header">
+        <div class="player-card-header">
                 <p class="PlayerCard-headerJerseyNumber">${player.jerseyNumber}</p>
                 <div class="PlayerCard--headerName">
                     <span class="PlayerCard--headerFirstName">${player.firstName}</span>
@@ -153,6 +152,7 @@ player.forEach((player) => {
                 </div>
                 <p class="PlayerCard--headerPosition">${player.position}</p>
             </div>
+        <figure class="player-image" style="background-image: url('${player.photo}')">
             <div class="PlayerCard--stats">
                 <ul class="PlayerCard--statList">
                     <li><span>HEIGHT</span><span>${player.height}</span></li>
