@@ -161,7 +161,7 @@ player.forEach((player) => {
                     <li><span>FROM</span><span>${player.location}</span></li>
                 </ul>
                 <div class="PlayerCard--statBtnHolder">
-                <a href="" class="PlayerCard--statBtn"><span role="button">Full Bio</span></a>
+                <a href="profile.html" class="PlayerCard--statBtn"><span role="button">Full Bio</span></a>
                 <a href="" class="PlayerCard--statBtn"><span role="button">Player Stats</span></a>
                 </div>
             </div>
