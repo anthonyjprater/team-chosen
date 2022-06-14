@@ -15,14 +15,14 @@ const roster = document.getElementById('teamRoster')
 
 const player = [
     {
-        firstName: "Kobe",
-        lastName: "Bryant",
+        firstName: "Jordan",
+        lastName: "Prater",
         position: "Guard",
         height: "6-6",
         jerseyNumber: "24",
         location: "Philadelphia, PA",
         birthDate: "August 23, 1978",
-        photo: "assets/jojogreen.png"
+        photo: "assets/jordan_34hi-res.png"
     },
     {
         firstName: "Lebron",
@@ -32,17 +32,17 @@ const player = [
         jerseyNumber: "23",
         location: "Akron, OH",
         birthDate: "December 30, 1984",
-        photo: "assets/player3greensamp.png"
+        photo: "assets/lucas_34lo-res.png"
     },
     {
-        firstName: "Kevin",
-        lastName: "Durant",
+        firstName: "Kaden",
+        lastName: "Prater",
         position: "Forward",
         height: "6-10",
         jerseyNumber: "7",
         location: "Washington, D.C.",
         birthDate: "September 29, 1988",
-        photo: "assets/kadengreen.png"
+        photo: "assets/kaden_34hi-res2.png"
     },
     {
         firstName: "Dwayne",
@@ -52,7 +52,7 @@ const player = [
         jerseyNumber: "24",
         location: "Chicago, IL",
         birthDate: "January 17, 1982",
-        photo: "assets/DW2.png"
+        photo: "assets/number2_34lo-res.png"
     },
     {
         firstName: "Stephen",
@@ -62,7 +62,7 @@ const player = [
         jerseyNumber: "30",
         location: "Akron, OH",
         birthDate: "March 14, 1988",
-        photo: "assets/SC.png"
+        photo: "assets/number5_34lo-res.png"
     },
     {
         firstName: "Lebron",
@@ -72,7 +72,7 @@ const player = [
         jerseyNumber: "6",
         location: "Akron, OH",
         birthDate: "Decembeer 30, 1984",
-        photo: "assets/LBJ4.png"
+        photo: "assets/number24_34lo-res.png"
     },
     {
         firstName: "Kobe",

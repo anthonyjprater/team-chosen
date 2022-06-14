@@ -96,6 +96,10 @@ a:visited {
   color: #37ff14;
 }
 
+a:link {
+  color: #37ff14;
+}
+
 .menu-nav a:hover,
 .main-content a span:hover,
 .menu-nav a:focus,
@@ -206,6 +210,10 @@ header {
 .main-content .container{
   width: 100%;
   max-width: 1400px;
+  border-top: 1px solid #37ff14;
+  border-bottom: 1px solid #37ff14;
+  display: flex;
+  justify-content: center;
 }
 
 .main-content-wrapper {
@@ -214,7 +222,6 @@ header {
   flex-flow: column nowrap;
   align-items: center;
   margin-bottom: 1.5rem;
-  border-top: 1px solid #37ff14;
   max-width: 1200px;
 }
 
@@ -299,25 +306,33 @@ header {
 }
 
 .carousel .carousel-actions button {
-  border-radius: 50px;
+  border-radius: 10px;
   background-color: #000;
   border: 1px solid #37ff14;
   color: #37ff14;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   width: 30px;
-  height: 30px;
+  height: 75px;
   padding: 0rem 0.7rem 0rem;
+  display: grid;
+  place-items: center;
 }
 
+.carousel .carousel-actions button:hover {
+  background-color: #37ff14;
+  border-color: #000;
+  color: #000;
+}
+/* 
 .carousel .carousel-actions button#carousel-button-prev {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .carousel .carousel-actions button#carousel-button-next {
-  margin-right: 20px;   
-}
+  margin-right: 10px;   
+} */
 
 @keyframes fadeVisibility {
   0% {
@@ -334,13 +349,11 @@ header {
   display: flex;
   width: 100%;
   height: 20rem;
-  background-image: url('../assets/huddle-color.jpg');
+  background-image: url('../assets/huddle-blkwh.jpg');
   background-size: 100% 20rem;
   color: #fff;
-  /* opacity: 0.5; */
-  filter: hue-rotate(90deg);
-  box-shadow: inset 5px 5px 15px 13px black;
-  border-radius: 15px;
+  opacity: 0.5;
+  box-shadow: inset 5px 5px 15px 20px black;
 }
 
 .team-header {
@@ -395,7 +408,7 @@ header {
 .player-image {
   top: 1.5rem;
   min-height: 400px;
-  background-size: 500px 400px;
+  background-size: 350px 500px;
   background-clip: padding-box;
   background-repeat: no-repeat;
   background-attachment: relative;
@@ -550,6 +563,7 @@ header {
   .roster-item-wrapper {
     width: 50%;
   }
+  
 }
 
 @media screen and (max-width: 599px) {
@@ -588,7 +602,6 @@ footer .container {
   justify-content: space-between;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  border-top: 1px solid #37ff14;
 }
 
 .contact {
@@ -652,7 +665,7 @@ html, body {
 }
 /* General styles */
 
-body {
+body.profile-body {
     background: var(--clr-dark);
     color: var(--clr-light);
     margin: 0;
@@ -697,7 +710,6 @@ main.player-bio {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; */
-    /* border: 1px solid yellow; */
 }
 
 section.player-bio--intro {
@@ -707,7 +719,6 @@ section.player-bio--intro {
     justify-content: center;
     text-align: left;
     padding: 1rem;
-    /* border: 1px solid yellow; */
 }
 
 section.player-bio--headline {
@@ -717,7 +728,6 @@ section.player-bio--headline {
     align-items: center;
     padding-top: 1rem;
     margin-block-start: 1rem;
-    /* border: 1px solid yellow; */
 }
 
 
@@ -727,7 +737,6 @@ div.player-info {
     align-items: center;
     justify-content: center;
     margin-block-start: 1rem;
-    /* border: 1px solid yellow; */
 }
 
 div.player-info span {
@@ -738,11 +747,9 @@ h1.player-info--name {
     display: flex;
     flex-flow: column nowrap;
     background-color: transparent;
-    /* border: 1px solid yellow; */
 }
 
 figure {
-    /* border: 1px solid yellow; */
     margin-block-start: 1rem;
 }
 
@@ -758,7 +765,7 @@ p.player-intro {
 }
 
 section.player-bio--stats {
-    border: 1px solid #c4c4c4;
+    /* border: 1px solid #c4c4c4; */
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -838,24 +845,29 @@ footer {
 
 
 @media only screen and (min-width: 600px) {
-  body {
+  body.profile-body {
     /* background-color: lightblue; */
-    background-image: url('../assets/Jordan_image4.jpg');
+    background-image: url('../assets/jordan_fullhi-res.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
+
   }
   
   main.player-bio {
-    flex-flow: column nowrap;
-    align-items: flex-start;
+    display: grid;
+    grid-template: auto auto 400px 300px / auto auto auto;
     padding: 0 1.5em;
     /* background-image: url('../assets/jojogreen.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top; */
-    /* border: 1px solid yellow; */
-    justify-content: space-around;
+}
+
+section.player-bio--intro {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: start;
 }
 
  img.player-profile--image {
@@ -863,6 +875,8 @@ footer {
  }
  
   section.player-bio--stats {
+        grid-row: 3;
+        grid-column: 1;
         border: 1px solid #848484;
         display: flex;
         flex-flow: column wrap;
@@ -919,7 +933,6 @@ footer {
         letter-spacing: 0.1em;
         margin: 0;
         padding: 0;
-        /* background-color: yellow; */
     }
     
     .PlayerCard--statList li {
@@ -937,7 +950,6 @@ footer {
     align-items: center;
     justify-content: center;
     margin-block-start: 1rem;
-    /* border: 1px solid yellow; */
     }
 
     div.player-info span {
@@ -948,7 +960,6 @@ footer {
         display: flex;
         flex-flow: column nowrap;
         background-color: transparent;
-        /* border: 1px solid yellow; */
     }
 
     h1.player-info--name span {
@@ -968,7 +979,14 @@ footer {
         
 
     section.player-bio--headline {
+        grid-row: 2;
+        grid-column: 1;
         align-items:  stretch;
+    }
+
+    section.player-bio--card {
+      grid-row: 4;
+      grid-column: 1;
     }
     
     ul.PlayerCard--statList li span:nth-child(1) {
