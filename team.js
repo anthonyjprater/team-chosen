@@ -17,12 +17,13 @@ const player = [
     {
         firstName: "Jordan",
         lastName: "Prater",
-        position: "Guard",
-        height: "6-6",
-        jerseyNumber: "24",
-        location: "Philadelphia, PA",
-        birthDate: "August 23, 1978",
-        photo: "assets/jordan_34hi-res.png"
+        position: "Forward",
+        height: "6-3",
+        jerseyNumber: "23",
+        location: "Mukilteo, WA",
+        birthDate: "September 16, 2004",
+        photo: "assets/jordan_34hi-res.png",
+        profileHtml: "jordan-prater"
     },
     {
         firstName: "Lebron",
@@ -37,12 +38,13 @@ const player = [
     {
         firstName: "Kaden",
         lastName: "Prater",
-        position: "Forward",
-        height: "6-10",
-        jerseyNumber: "7",
-        location: "Washington, D.C.",
-        birthDate: "September 29, 1988",
-        photo: "assets/kaden_34hi-res2.png"
+        position: "Guard",
+        height: "6-1",
+        jerseyNumber: "21",
+        location: "Mukilteo, WA",
+        birthDate: "January 29, 2006",
+        photo: "assets/kaden_34hi-res2.png",
+        profileHtml: "kaden-prater"
     },
     {
         firstName: "Dwayne",
@@ -161,7 +163,7 @@ player.forEach((player) => {
                     <li><span>FROM</span><span>${player.location}</span></li>
                 </ul>
                 <div class="PlayerCard--statBtnHolder">
-                <a href="profile.html" class="PlayerCard--statBtn"><span role="button">Full Bio</span></a>
+                <a href="profile-${player.profileHtml}.html" class="PlayerCard--statBtn"><span role="button">Full Bio</span></a>
                 <a href="" class="PlayerCard--statBtn"><span role="button">Player Stats</span></a>
                 </div>
             </div>

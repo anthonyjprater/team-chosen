@@ -861,7 +861,7 @@ footer {
 @media only screen and (min-width: 600px) {
   body.profile-body {
     /* background-color: lightblue; */
-    background-image: url('../assets/jordan_fullhi-res.png');
+    /* background-image: url('../assets/jordan_fullhi-res.png'); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
