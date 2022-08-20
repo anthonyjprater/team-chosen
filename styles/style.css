@@ -228,9 +228,12 @@ header {
 }
 
 .home-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
   padding: 1rem .25rem .25rem;
 }
+
 
 /* About Page */
 
@@ -239,6 +242,7 @@ header {
   flex-flow: column nowrap;
   align-items: center;
   max-width: 900px;
+  height: 35vh;
 }
 
 .about-us {
@@ -529,6 +533,20 @@ header {
   border-left: 1px solid #404040;
 }
 
+.schedule-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0009;
+  font-size: 7rem;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #000, 1px 1px 0 #fff;
+  letter-spacing: 2px;
+  width: 20rem;
+  height: 35vh;
+  background: rgb(55,255,20);
+  background: radial-gradient(circle, rgba(55,255,20,1) 10%, rgba(0,0,0,1) 50%); 
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 767px) {
@@ -610,7 +628,8 @@ footer .container {
 .footer-wrapper {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   padding: 1rem;
   margin-bottom: 1.5rem;
   align-items: flex-start;
@@ -860,7 +879,7 @@ footer {
 
 @media only screen and (min-width: 600px) {
   body.profile-body {
-    /* background-color: lightblue; */
+    background-color: black;
     /* background-image: url('../assets/jordan_fullhi-res.png'); */
     background-size: contain;
     background-repeat: no-repeat;
@@ -1029,6 +1048,16 @@ section.player-bio--intro {
     }
 }
 
+@media only screen and (max-width: 600px) {
+  body.profile-body {
+    background-color: black;
+    background-image: none !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+  }
+}
 @media only screen and (min-width: 700px) {
   
 }
