@@ -560,6 +560,10 @@ header {
 
 @media screen and (max-width: 767px) {
 
+  header {
+    max-height: 16vh;
+  }
+
   .mobile-menu-hamburger {
     display: flex;
     flex-flow: column nowrap;
