@@ -234,6 +234,7 @@ header {
   font-style: italic;
   font-weight: 700;
   padding: 1rem .25rem .25rem;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -254,9 +255,13 @@ header {
   line-height: 1.6;
 }
 
+.about-us strong {
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 767px) {
   .about-us {
-    width: 75%;
+    width: 100%;
   }
 }
 
@@ -266,7 +271,7 @@ header {
   display: grid;
   place-content: center;
   max-width: 800px;
-  padding: 3rem;
+  padding: 0.125rem;
   margin-bottom: 1.5rem;
 }
 
@@ -381,7 +386,6 @@ header {
   justify-content: center;
   width: 100%;
   margin-block-start: 1rem;
-  padding: 0 1rem;
   gap: 3em;
 }
 
